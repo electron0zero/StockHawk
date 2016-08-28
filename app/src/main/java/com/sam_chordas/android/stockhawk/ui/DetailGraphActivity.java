@@ -12,7 +12,7 @@ public class DetailGraphActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_graph);
-//        causes crash fix this
+//        causes crash, fix this
 //        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
