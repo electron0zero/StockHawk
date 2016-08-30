@@ -84,7 +84,11 @@ public class MyStocksActivity extends AppCompatActivity implements LoaderManager
         networkToast();
       }
     }
-    RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+    EmptyRecyclerView recyclerView = (EmptyRecyclerView) findViewById(R.id.recycler_view);
+//    RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+    View emptyView = findViewById(R.id.recycler_view_empty);
+    recyclerView.setEmptyView(emptyView);
+
     recyclerView.setLayoutManager(new LinearLayoutManager(this));
     getLoaderManager().initLoader(CURSOR_LOADER_ID, null, this);
 
