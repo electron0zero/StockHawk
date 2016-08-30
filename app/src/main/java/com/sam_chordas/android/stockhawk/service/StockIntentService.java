@@ -25,7 +25,7 @@ public class StockIntentService extends IntentService {
   }
 
   @Override protected void onHandleIntent(Intent intent) {
-    Log.d(StockIntentService.class.getSimpleName(), "Stock Intent Service");
+    Log.d(StockIntentService.class.getSimpleName(), getString(R.string.stock_intent_service));
     StockTaskService stockTaskService = new StockTaskService(this);
     Bundle args = new Bundle();
     if (intent.getStringExtra("tag").equals("add")){
@@ -44,7 +44,7 @@ public class StockIntentService extends IntentService {
       new Handler(Looper.getMainLooper()).post(new Runnable() {
         @Override
         public void run() {
-          Toast.makeText(getApplicationContext(), "Invalid SYMBOL for Stock Request", Toast.LENGTH_LONG).show();
+          Toast.makeText(getApplicationContext(), R.string.invalid_symbol, Toast.LENGTH_LONG).show();
         }
       });
     }

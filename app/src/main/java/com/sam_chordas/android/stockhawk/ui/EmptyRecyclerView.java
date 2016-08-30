@@ -54,11 +54,11 @@ public class EmptyRecyclerView extends RecyclerView {
             isConnected = activeNetwork != null &&
                     activeNetwork.isConnectedOrConnecting();
             if (getAdapter().getItemCount() == 0){
-                tv.setText("Nothing to Show, Add few Items");
+                tv.setText(R.string.empty_view_message);
                 emptyView.setVisibility(VISIBLE);
             }
             else if(!isConnected){
-                tv.setText("No Internet");
+                tv.setText(R.string.no_internet);
                 emptyView.setVisibility(VISIBLE);
             }
             else{
