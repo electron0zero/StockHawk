@@ -30,21 +30,6 @@
             </intent-filter>
         </activity>
 
-        <service
-            android:name=".service.StockTaskService"
-            android:exported="true"
-            android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE">
-            <intent-filter>
-                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY" />
-            </intent-filter>
-        </service>
-        <service android:name=".service.StockIntentService" />
-
-        <provider
-            android:name=".data.generated.QuoteProvider"
-            android:authorities="com.sam_chordas.android.stockhawk.data.QuoteProvider"
-            android:exported="true" />
-
         <activity
             android:name=".ui.DetailGraphActivity"
             android:label="@string/title_activity_detail_graph"
@@ -54,15 +39,39 @@
                 android:value="com.sam_chordas.android.stockhawk.ui.MyStocksActivity" />
         </activity>
 
+
+        <!--services -->
+        <service
+            android:name=".service.StockTaskService"
+            android:exported="true"
+            android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.StockIntentService" />
+        <service
+            android:name=".ui.widget.StockHawkWidgetRemoteViewService"
+            android:exported="false"
+            android:permission="android.permission.BIND_REMOTEVIEWS"/>
+
+        <!--Providers-->
+
+        <provider
+            android:authorities="com.sam_chordas.android.stockhawk.data.QuoteProvider"
+            android:name=".data.generated.QuoteProvider"
+            android:exported="true" />
+
+        <!-- Receivers -->
         <receiver android:name=".ui.widget.StockHawkWidgetProvider">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
-
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/stock_hawk_widget_info" />
         </receiver>
+
     </application>
 
 </manifest>
