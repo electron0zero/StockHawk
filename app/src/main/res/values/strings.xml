@@ -5,7 +5,7 @@
     <string name="action_settings" translatable="true">Settings</string>
     <string name="action_change_units" translatable="true">Change Units</string>
     <string name="symbol_search" translatable="true">Symbol Search</string>
-    <string name="content_test" translatable="true">Search for a Stock Symbol</string>
+    <string name="content_test" translatable="true">Search for Stock Symbol</string>
     <string name="network_toast" translatable="true">Uh-oh! This app requires an internet connection</string>
     <string name="title_activity_detail_graph" translatable="true">Detail Graph</string>
     <string name="add_widget" translatable="true">Add widget</string>
@@ -20,7 +20,7 @@
     <string name="oops_something_is_wrong_retry" translatable="true">Oops !!! Something is wrong, Retry</string>
     <string name="oops_something_is_wrong_check_your_network_connection_and_try_again" translatable="true">Oops Something is wrong, check your network connection and try again</string>
     <string name="progress_bar_loading" translatable="true">Progress Bar - Loading</string>
-    <string name="refresh" translatable="true">Refresh</string>
+    <string name="refresh">Refresh</string>
     <string name="invalid_symbol" translatable="true">Invalid Symbol for Stock Request</string>
     <string name="empty_view_message" translatable="true">Nothing to Show, Add few Items</string>
     <string name="no_internet" translatable="true">No Internet</string>

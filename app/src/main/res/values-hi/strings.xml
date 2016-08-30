@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Stock Hawk</string>
+    <string name="oops_something_is_wrong_check_your_network_connection_and_try_again">उफ़ कुछ गलत हो रहा है, अपने नेटवर्क कनेक्शन की जाँच करें और फिर कोशिश करें</string>
+    <string name="oops_something_is_wrong_retry">उफ़ !!! कुछ गलत हो रहा है, पुन: प्रयास करें</string>
+    <string name="progress_bar_loading">प्रगति बार - लोड हो रहा है</string>
+    <string name="refresh">ताज़ा करना</string>
+    <string name="stock_already_saved">यह शेयर पहले से ही बचाया है!</string>
+    <string name="stock_symbol">शेयर प्रतीक</string>
+    <string name="stocks">शेयर</string>
+    <string name="symbol_search">प्रतीक खोज</string>
+    <string name="title_activity_detail_graph">विस्तृत ग्राफ़</string>
+    <string name="action_change_units">इकाइयों बदलें</string>
+    <string name="action_example">उदाहरण कार्रवाई</string>
+    <string name="action_settings">सेटिंग्स</string>
+    <string name="add_new_stock">नए शेयर जोड़े</string>
+    <string name="add_widget">विजेट जोड़ें</string>
+    <string name="bid_price">बोली मूल्य</string>
+    <string name="change">परिवर्तन</string>
+    <string name="content_test">शेयर प्रतीक की खोज</string>
+    <string name="empty_view_message">कुछ भी नहीं दिखाने के लिए, कुछ आइटम जोड़ें</string>
+    <string name="graph_of_stock_price_over_time">समय के साथ शेयर की कीमत का ग्राफ</string>
+    <string name="invalid_symbol">स्टॉक अनुरोध के लिए अमान्य प्रतीक</string>
+    <string name="list_of_stock_items">शेयर वस्तुओं की सूची</string>
+    <string name="network_toast">उह ओह! इस एप्लिकेशन को एक इंटरनेट कनेक्शन की आवश्यकता है</string>
+    <string name="no_internet">कोई इंटरनेट नहीं</string>
+    <string name="no_stocks_please_add">कोई स्टॉक, कृपया जोड़ सकते हैं</string>
+</resources>
