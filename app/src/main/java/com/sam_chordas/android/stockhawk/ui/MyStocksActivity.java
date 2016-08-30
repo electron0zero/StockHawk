@@ -53,6 +53,13 @@ public class MyStocksActivity extends AppCompatActivity implements LoaderManager
   private Context mContext;
   private Cursor mCursor;
   boolean isConnected;
+  private View mEmptyView;
+
+//  Why are we scheduling Task in OnCreate of our Main Activity (idk)
+//  Starter Code has it There so I am leaving it UnChanged.
+//  But This has Serious Effect in Startup time of App
+// TODO: 30-08-16 Figure it out and Refactor it
+
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -94,7 +101,6 @@ public class MyStocksActivity extends AppCompatActivity implements LoaderManager
               }
             }));
     recyclerView.setAdapter(mCursorAdapter);
-
 
     FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
     fab.attachToRecyclerView(recyclerView);
@@ -227,5 +233,6 @@ public class MyStocksActivity extends AppCompatActivity implements LoaderManager
   public void onLoaderReset(Loader<Cursor> loader){
     mCursorAdapter.swapCursor(null);
   }
+
 
 }
