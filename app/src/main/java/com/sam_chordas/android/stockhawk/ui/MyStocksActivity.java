@@ -88,7 +88,7 @@ public class MyStocksActivity extends AppCompatActivity implements LoaderManager
                 // launch details graph activity
                 String symbol = ((TextView) v.findViewById(R.id.stock_symbol)).getText().toString();
                 Intent intent = new Intent(mContext, DetailGraphActivity.class);
-                intent.putExtra("symbol",symbol);
+                intent.putExtra(DetailGraphActivity.SELECTED_SYMBOL,symbol);
                 startActivity(intent);
 
               }

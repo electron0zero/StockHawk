@@ -24,12 +24,15 @@ import java.util.ArrayList;
 
 public class DetailGraphActivity extends AppCompatActivity {
 
+    public static final String SELECTED_SYMBOL = "SELECTED_SYMBOL";
+
     private View errorMessage;
     private View progressCircle;
     private ValueLineChart lineChart;
 
     private boolean isLoaded = false;
     private String companySymbol;
+
     private String companyName;
     private ArrayList<String> labels;
     private ArrayList<Float> values;
@@ -44,7 +47,7 @@ public class DetailGraphActivity extends AppCompatActivity {
         progressCircle = findViewById(R.id.progress_circle);
         lineChart = (ValueLineChart) findViewById(R.id.line_chart);
 
-        companySymbol = getIntent().getStringExtra("symbol");
+        companySymbol = getIntent().getStringExtra(DetailGraphActivity.SELECTED_SYMBOL);
         if (savedInstanceState == null) {
             downloadStockDetails();
         }
